@@ -178,7 +178,12 @@ function __splitTrim(str, token) {
   });
 }
 function __contains(a, b) {
-  return a.indexOf(b) > -1;
+	try {
+    return a.indexOf(b) > -1;
+  } catch (error) {
+    // 数据源可能有格式问题
+    console.log(error)
+  }
 }
 function __hierarchize(obj, dottedPath) {
   var parts = __splitTrim(dottedPath, DELIMITER);
