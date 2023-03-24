@@ -1,12 +1,10 @@
 # jsonSQL
 
-[![npm version](https://badge.fury.io/js/jsonsql.svg?branche=master)](http://badge.fury.io/js/jsonsql)
-
 A SQL-like query language for JSON objects.
 
 ## Install
 ```
-npm install jsonsql
+npm install jsonsql-gz
 ```
 
 ## Semantics
